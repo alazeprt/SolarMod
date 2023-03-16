@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "solar",
+	"version": "1.0-alpha",
+	"name": "Solar Panel",
+	"description": "A mod with solar panels",
+	"authors": [
+		"alazeprt"
+	],
+	"contact": {
+		"homepage": "https://alazeprt.top/"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/solar/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.alazeprt.SolarPanelMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.8",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
