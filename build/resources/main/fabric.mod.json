@@ -1,21 +1,21 @@
 {
 	"schemaVersion": 1,
 	"id": "solar",
-	"version": "1.0-alpha",
+	"version": "1.0-beta",
 	"name": "Solar Panel",
 	"description": "A mod with solar panels",
 	"authors": [
 		"alazeprt"
 	],
 	"contact": {
-		"homepage": "https://alazeprt.top/"
+		"homepage": "https://github.com/alazeprt/SolarMod"
 	},
 	"license": "GPL-3.0",
 	"icon": "assets/solar/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"org.alazeprt.SolarPanelMod"
+          "com.alazeprt.SolarPanelMod"
 		]
 	},
 	"depends": {
