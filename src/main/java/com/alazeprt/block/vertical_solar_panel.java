@@ -29,9 +29,9 @@ public class vertical_solar_panel extends HorizontalFacingBlock {
         Direction dir = state.get(FACING);
         switch(dir) {
             case NORTH, SOUTH:
-                return VoxelShapes.cuboid(0.0f, 0.0f, 0.4f, 1.0f, 1.0f, 0.6f);
+                return VoxelShapes.cuboid(0.0f, 0.0f, 0.4375f, 1.0f, 1.0f, 0.5625f);
             case EAST, WEST:
-                return VoxelShapes.cuboid(0.4f, 0.0f, 0.0f, 0.6f, 1.0f, 1.0f);
+                return VoxelShapes.cuboid(0.4375f, 0.0f, 0.0f, 0.5625f, 1.0f, 1.0f);
             default:
                 return VoxelShapes.fullCube();
         }
