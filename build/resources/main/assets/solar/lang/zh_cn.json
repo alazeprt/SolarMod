@@ -1,5 +1,6 @@
 {
   "block.solar.solar_panel": "太阳能板",
   "block.solar.vertical_solar_panel": "竖的太阳能板",
-  "block.solar.silicon_ore": "硅矿"
+  "block.solar.silicon_ore": "硅矿",
+  "itemGroup.solar.solar_group": "太阳能模组"
 }

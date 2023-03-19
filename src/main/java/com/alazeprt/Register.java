@@ -5,12 +5,16 @@ import com.alazeprt.block.solar_panel;
 import com.alazeprt.block.vertical_solar_panel;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -36,13 +40,13 @@ public class Register {
         final silicon_ore SILICON_ORE = Registry.register(Registry.BLOCK,
                 new Identifier("solar", "silicon_ore"),
                 new silicon_ore(FabricBlockSettings.of(Material.STONE).strength(3.0f, 3.0f).requiresTool()));
-        Registry.register(Registry.ITEM,
+        final Item SOLAR_PANEL_ITEM = Registry.register(Registry.ITEM,
                 new Identifier("solar", "solar_panel"),
                 new BlockItem(SOLAR_PANEL, new FabricItemSettings()));
-        Registry.register(Registry.ITEM,
+        final Item VERTICAL_SOLAR_PANEL_ITEM = Registry.register(Registry.ITEM,
                 new Identifier("solar", "vertical_solar_panel"),
                 new BlockItem(VERTICAL_SOLAR_PANEL, new FabricItemSettings()));
-        Registry.register(Registry.ITEM,
+        final Item SILICON_ORE_ITEM = Registry.register(Registry.ITEM,
                 new Identifier("solar", "silicon_ore"),
                 new BlockItem(SILICON_ORE, new FabricItemSettings()));
         ConfiguredFeature<?, ?> OVERWORLD_WOOL_ORE_CONFIGURED_FEATURE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
@@ -60,5 +64,14 @@ public class Register {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, 
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier("solar", "silicon_ore")));
+        final ItemGroup SOLAR_GROUP = FabricItemGroupBuilder.create(
+                        new Identifier("solar", "solar_group"))
+                .icon(() -> new ItemStack(SOLAR_PANEL_ITEM))
+                .appendItems(itemStacks -> {
+                    itemStacks.add(new ItemStack(SOLAR_PANEL_ITEM));
+                    itemStacks.add(new ItemStack(VERTICAL_SOLAR_PANEL_ITEM));
+                    itemStacks.add(new ItemStack(SILICON_ORE_ITEM));
+                })
+                .build();
     }
 }
