@@ -1,3 +1,4 @@
 {
-  "item.solar.solar_panel": "Solar Panel"
+  "block.solar.solar_panel": "Solar Panel",
+  "block.solar.vertical_solar_panel": "Vertical Solar Panel"
 }

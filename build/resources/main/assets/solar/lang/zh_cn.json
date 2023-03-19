@@ -1,3 +1,4 @@
 {
-  "block.solar.solar_panel": "太阳能板"
+  "block.solar.solar_panel": "太阳能板",
+  "block.solar.vertical_solar_panel": "竖的太阳能板"
 }

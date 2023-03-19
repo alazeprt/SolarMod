@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "solar:block/vertical_solar_panel", "uvlock": true },
+    "facing=east":  { "model": "solar:block/vertical_solar_panel", "y":  90, "uvlock": true },
+    "facing=south": { "model": "solar:block/vertical_solar_panel", "y": 180, "uvlock": true },
+    "facing=west":  { "model": "solar:block/vertical_solar_panel", "y": 270, "uvlock": true }
+  }
+}

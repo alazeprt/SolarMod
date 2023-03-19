@@ -1,6 +1,7 @@
 package com.alazeprt;
 
 import com.alazeprt.block.solar_panel;
+import com.alazeprt.block.vertical_solar_panel;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -20,12 +21,17 @@ public class SolarPanelMod implements ModInitializer {
 
 	public static final solar_panel SOLAR_PANEL = Registry.register(Registry.BLOCK,
 			new Identifier("solar", "solar_panel"),
-			new solar_panel(FabricBlockSettings.of(Material.STONE).strength(5.0f, 6.0f).requiresTool().mapColor(MapColor.BLUE)));
+			new solar_panel(FabricBlockSettings.of(Material.METAL).strength(5.0f, 6.0f).requiresTool().mapColor(MapColor.BLUE)));
+
+	public static final vertical_solar_panel VERTICAL_SOLAR_PANEL = Registry.register(Registry.BLOCK,
+			new Identifier("solar", "vertical_solar_panel"),
+			new vertical_solar_panel(FabricBlockSettings.of(Material.METAL).strength(5.0f, 6.0f).requiresTool().mapColor(MapColor.BLUE)));
 
 
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("solar", "solar_panel"), new BlockItem(SOLAR_PANEL, new FabricItemSettings()));
+		Registry.register(Registry.ITEM, new Identifier("solar", "solar_panel"), new BlockItem(VERTICAL_SOLAR_PANEL, new FabricItemSettings()));
 		LOGGER.info("Solar Panel Mod v1.0-alpha Loaded");
 	}
 }
