@@ -31,7 +31,7 @@ public class SolarPanelMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("solar", "solar_panel"), new BlockItem(SOLAR_PANEL, new FabricItemSettings()));
-		Registry.register(Registry.ITEM, new Identifier("solar", "solar_panel"), new BlockItem(VERTICAL_SOLAR_PANEL, new FabricItemSettings()));
+		Registry.register(Registry.ITEM, new Identifier("solar", "vertical_solar_panel"), new BlockItem(VERTICAL_SOLAR_PANEL, new FabricItemSettings()));
 		LOGGER.info("Solar Panel Mod v1.0-alpha Loaded");
 	}
 }
