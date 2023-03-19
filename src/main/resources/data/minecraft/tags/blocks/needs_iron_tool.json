@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "solar:solar_panel"
+    "solar:solar_panel",
+    "solar:vertical_solar_panel",
+    "solar:silicon_ore"
   ]
 }

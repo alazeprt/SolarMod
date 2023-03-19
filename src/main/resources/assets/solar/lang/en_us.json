@@ -1,4 +1,5 @@
 {
   "block.solar.solar_panel": "Solar Panel",
-  "block.solar.vertical_solar_panel": "Vertical Solar Panel"
+  "block.solar.vertical_solar_panel": "Vertical Solar Panel",
+  "block.solar.silicon_ore": "Silicon Ore"
 }
