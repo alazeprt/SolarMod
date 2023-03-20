@@ -3,6 +3,7 @@ package com.alazeprt;
 import com.alazeprt.block.silicon_ore;
 import com.alazeprt.block.solar_panel;
 import com.alazeprt.block.vertical_solar_panel;
+import com.alazeprt.item.silicon_ingot;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -49,6 +50,7 @@ public class Register {
         final Item SILICON_ORE_ITEM = Registry.register(Registry.ITEM,
                 new Identifier("solar", "silicon_ore"),
                 new BlockItem(SILICON_ORE, new FabricItemSettings()));
+        final silicon_ingot SILICON_INGOT = Registry.register(Registry.ITEM, new Identifier("solar", "silicon_ingot"), new silicon_ingot(new FabricItemSettings()));
         ConfiguredFeature<?, ?> OVERWORLD_WOOL_ORE_CONFIGURED_FEATURE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier("solar", "silicon_ore"),
                 new ConfiguredFeature(Feature.ORE,
