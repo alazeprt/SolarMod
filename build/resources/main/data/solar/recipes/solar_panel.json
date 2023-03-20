@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Y ",
+    " X ",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:quartz_slab"
+    },
+    "X": {
+      "item": "solar:solar_cell"
+    },
+    "Y": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "solar:solar_panel",
+    "count": 1
+  }
+}

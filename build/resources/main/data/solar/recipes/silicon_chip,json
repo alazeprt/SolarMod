@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+      "item": "solar:silicon_ingot"
+  },
+  "result": "solar:silicon_chip",
+  "count": 2
+}

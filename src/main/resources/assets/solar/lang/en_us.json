@@ -2,6 +2,9 @@
   "block.solar.solar_panel": "Solar Panel",
   "block.solar.vertical_solar_panel": "Vertical Solar Panel",
   "block.solar.silicon_ore": "Silicon Ore",
+  "block.solar.silicon_block": "Silicon Block",
   "itemGroup.solar.solar_group": "Solar Mod",
-  "item.solar.silicon_ingot": "Silicon Ingot"
+  "item.solar.silicon_ingot": "Silicon Ingot",
+  "item.solar.silicon_chip": "Silicon Chip",
+  "item.solar.solar_cell": "Solar Cell"
 }

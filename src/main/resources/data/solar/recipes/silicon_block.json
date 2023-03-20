@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "solar:silicon_ingot"
+    }
+  },
+  "result": {
+    "item": "tutorial:custom_item",
+    "count": 4
+  }
+}

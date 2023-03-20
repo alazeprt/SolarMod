@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "solar:block/silicon_block" }
+  }
+}

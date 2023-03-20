@@ -3,6 +3,7 @@
   "values": [
     "solar:solar_panel",
     "solar:vertical_solar_panel",
-    "solar:silicon_ore"
+    "solar:silicon_ore",
+    "solar:silicon_block"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "solar:silicon_chip"
+  },
+  "addition": {
+    "item": "lapis_lazuli"
+  },
+  "result": "solar:solar_cell"
+}
