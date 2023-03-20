@@ -76,5 +76,6 @@ public class Register {
                     itemStacks.add(new ItemStack(SILICON_INGOT));
                 })
                 .build();
+        
     }
 }
