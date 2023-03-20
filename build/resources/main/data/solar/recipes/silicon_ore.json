@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+      "item": "solar:silicon_ore"
+  },
+  "result": "solar:silicon_ingot",
+  "experience": 80,
+  "cookingtime": 300
+}

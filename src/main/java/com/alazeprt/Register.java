@@ -73,6 +73,7 @@ public class Register {
                     itemStacks.add(new ItemStack(SOLAR_PANEL_ITEM));
                     itemStacks.add(new ItemStack(VERTICAL_SOLAR_PANEL_ITEM));
                     itemStacks.add(new ItemStack(SILICON_ORE_ITEM));
+                    itemStacks.add(new ItemStack(SILICON_INGOT));
                 })
                 .build();
     }
