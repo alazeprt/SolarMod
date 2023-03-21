@@ -4,7 +4,9 @@
     "item": "solar:silicon_chip"
   },
   "addition": {
-    "item": "lapis_lazuli"
+    "item": "minecraft:lapis_lazuli"
   },
-  "result": "solar:solar_cell"
+  "result": {
+    "item": "solar:solar_cell"
+  }
 }
