@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "solar",
-	"version": "1.1-develop",
+	"version": "1.1-release",
 	"name": "Solar Panel",
 	"description": "A mod with solar panels",
 	"authors": [
