@@ -1,9 +1,6 @@
 package com.alazeprt;
 
-import com.alazeprt.block.silicon_block;
-import com.alazeprt.block.silicon_ore;
-import com.alazeprt.block.solar_panel;
-import com.alazeprt.block.vertical_solar_panel;
+import com.alazeprt.block.*;
 import com.alazeprt.item.silicon_chip;
 import com.alazeprt.item.silicon_ingot;
 import com.alazeprt.item.solar_cell;
@@ -12,9 +9,11 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -68,6 +67,11 @@ public class Register {
         final solar_cell SOLAR_CELL = Registry.register(Registry.ITEM,
                 new Identifier("solar", "solar_cell"),
                 new solar_cell(new FabricItemSettings()));
+        final BlockEntityType<solar_panel_entity> SOLAR_PANEL_ENTITY = Registry.register(
+                Registry.BLOCK_ENTITY_TYPE,
+                new Identifier("solar", "solar_panel_entity"),
+                FabricBlockEntityTypeBuilder.create(solar_panel_entity::new, SOLAR_PANEL).build()
+        );
         ConfiguredFeature<?, ?> OVERWORLD_WOOL_ORE_CONFIGURED_FEATURE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier("solar", "silicon_ore"),
                 new ConfiguredFeature(Feature.ORE,
@@ -98,4 +102,5 @@ public class Register {
                 .build();
 
     }
+
 }
