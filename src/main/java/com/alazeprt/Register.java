@@ -67,11 +67,6 @@ public class Register {
         final solar_cell SOLAR_CELL = Registry.register(Registry.ITEM,
                 new Identifier("solar", "solar_cell"),
                 new solar_cell(new FabricItemSettings()));
-        final BlockEntityType<solar_panel_entity> SOLAR_PANEL_ENTITY = Registry.register(
-                Registry.BLOCK_ENTITY_TYPE,
-                new Identifier("solar", "solar_panel_entity"),
-                FabricBlockEntityTypeBuilder.create(solar_panel_entity::new, SOLAR_PANEL).build()
-        );
         ConfiguredFeature<?, ?> OVERWORLD_WOOL_ORE_CONFIGURED_FEATURE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier("solar", "silicon_ore"),
                 new ConfiguredFeature(Feature.ORE,
