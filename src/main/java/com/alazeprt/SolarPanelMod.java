@@ -15,4 +15,6 @@ public class SolarPanelMod implements ModInitializer {
 		Register.register();
 		LOGGER.info("Solar Panel Mod v1.0-alpha Loaded");
 	}
+
+
 }
