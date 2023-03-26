@@ -13,7 +13,7 @@ public class SolarPanelMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Register.register();
-		LOGGER.info("Solar Panel Mod v1.0-alpha Loaded");
+		LOGGER.info("Solar Panel Mod v1.2-release Loaded");
 	}
 
 
