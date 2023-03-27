@@ -19,7 +19,7 @@ public class vertical_solar_panel_entity extends BlockEntity {
         long tick = world.getTimeOfDay();
         long time = tick%24000;
         if(state.get(WATERLOGGED)){
-            solar_panel_entity.light = 0;
+            vertical_solar_panel_entity.light = 0;
             state.with(LIGHT, 0);
         } else{
             if(time >= 0 && time <= 12000){
