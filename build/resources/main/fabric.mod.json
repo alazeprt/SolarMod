@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "solar",
-	"version": "1.2.1-develop",
+	"version": "1.2-release",
 	"name": "Solar Panel",
 	"description": "A mod with solar panels",
 	"authors": [
@@ -20,7 +20,7 @@
 	},
 	"depends": {
 		"fabricloader": ">=0.14.8",
-		"minecraft": "~1.19.2",
+		"minecraft": "~1.19.3",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
