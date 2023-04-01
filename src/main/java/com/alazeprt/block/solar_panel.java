@@ -57,7 +57,7 @@ public class solar_panel extends BlockWithEntity implements BlockEntityProvider,
         if (state.get(WATERLOGGED)) {
             solar_panel_entity.light = 0;
             getDefaultState().with(LIGHT, 0);
-            world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+            world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
