@@ -63,7 +63,7 @@ public class vertical_solar_panel extends BlockWithEntity implements BlockEntity
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState()
                 .with(WATERLOGGED, ctx.getWorld().getFluidState(ctx.getBlockPos()).getFluid() == Fluids.WATER)
-                .with(FACING, ctx.getPlayerFacing().getOpposite());
+                .with(FACING, ctx.getPlayerLookDirection().getOpposite());
     }
 
     @Override
